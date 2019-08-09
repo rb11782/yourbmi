@@ -17,7 +17,7 @@ class ClientsController < ApplicationController
   private
 
   def client_params
-  params.require(:client).permit(:name, :weight_in_kg, :height_in_m, :bmi )
+  params.require(:client).permit(:name, :weight_in_kg, :height_in_m, :bmi)
   end
 
 end
