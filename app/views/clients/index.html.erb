@@ -1,0 +1,13 @@
+
+
+<% @clients.each do |client| %>
+  <div class="booyah-box col-10 offset-1">
+    <h1> My Name : <%= client.name %></h1><br />
+    <i> My Weight in Kilograms : <%= client.weight_in_kg %> kg </i><br />
+    <i> My Height in Meters : <%= client.height_in_m %> m </i><br />
+     <br />
+    <p> My BMI (Body Mass Index) : <%= client.bmi %></p><br />
+  </div>
+
+  <hr />
+<% end %>

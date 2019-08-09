@@ -1,2 +1,12 @@
 
-<h1>Enter Client Details</h1>
+<div class="booyah-box col-10 offset-1">
+<h1>Enter Your Client Details</h1>
+ <%= simple_form_for @client do |f| %>
+    <%= f.input :name %>
+    <%= f.input :weight_in_kg %>
+    <%= f.input :height_in_m %>
+    <%= f.input :bmi %>
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+    <br />
+  <% end %>
+</div>
